@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <title>点击其他地方关闭浮层</title>
+</head>
+
+<body>
+    <h1>点击其他地方关闭浮层的两种方法</h1>
+
+    <p>1. stopPropagation 阻止事件传播(阻止冒泡)</p>
+    <div style="width:100%">
+        <div id="wrapper1" class="wrapper">
+            <button id="click1">点我1</button>
+            <div id="popover1" class="popover">
+                <input type="checkbox">浮层1
+            </div>
+        </div>
+    </div>
+
+    <p>2. setTimeout 设置延时 (我建议用第一种)</p>
+    <div style="width:100%">
+        <div id="wrapper2" class="wrapper">
+            <button id="click2">点我2</button>
+            <div id="popover2" class="popover">
+                <input type="checkbox">浮层2
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
